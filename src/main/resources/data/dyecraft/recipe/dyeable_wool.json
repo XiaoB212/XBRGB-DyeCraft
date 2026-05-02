@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WDW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "D": {
+      "item": "dyecraft:rgb_dye"
+    }
+  },
+  "result": {
+    "id": "dyecraft:dyeable_wool",
+    "count": 8,
+    "components": {
+      "!minecraft:block_state": {},
+      "minecraft:custom_data": {
+        "Color": -1
+      }
+    }
+  }
+}

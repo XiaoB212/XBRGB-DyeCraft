@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FDF",
+    "DSD",
+    "FDF"
+  ],
+  "key": {
+    "F": { "item": "minecraft:poppy" },
+    "S": { "item": "minecraft:red_dye" },
+    "D": { "item": "minecraft:wheat_seeds" }
+  },
+  "result": {
+    "id": "dyecraft:red_dye_seeds",
+    "count": 4
+  }
+}

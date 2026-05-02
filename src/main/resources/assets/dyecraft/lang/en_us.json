@@ -1,0 +1,38 @@
+{
+  "itemGroup.dyecraft.main": "DyeCraft",
+  "item.dyecraft.rgb_dye": "RGB Mixed Dye",
+  "item.dyecraft.red_dye_seeds": "Red Dye Seeds",
+  "item.dyecraft.blue_dye_seeds": "Blue Dye Seeds",
+  "item.dyecraft.green_dye_seeds": "Green Dye Seeds",
+  "item.dyecraft.red_dye_plant": "Red Dye Plant",
+  "item.dyecraft.blue_dye_plant": "Blue Dye Plant",
+  "item.dyecraft.green_dye_plant": "Green Dye Plant",
+  "block.dyecraft.red_dye_flower": "Red Dye Plant",
+  "block.dyecraft.blue_dye_flower": "Blue Dye Plant",
+  "block.dyecraft.green_dye_flower": "Green Dye Plant",
+  "block.dyecraft.dyeable_block": "Dyeable Block",
+  "block.dyecraft.dyeable_glass": "Dyeable Glass",
+  "block.dyecraft.dyeable_concrete": "Dyeable Concrete",
+  "block.dyecraft.dyeable_terracotta": "Dyeable Terracotta",
+  "block.dyecraft.dyeable_wool": "Dyeable Wool",
+  "block.dyecraft.dyeing_station": "Dyeing Station",
+
+  "gui.dyecraft.dyeing_station.button.dye": "Dye",
+  "gui.dyecraft.dyeing_station.error.no_dye": "Requires Red, Green, and Blue dyes!",
+  "gui.dyecraft.dyeing_station.error.no_block": "Place dyeable blocks first!",
+  "gui.dyecraft.dyeing_station.error.not_enough_dye": "Not enough dye, need 1 of each per 16 blocks!",
+
+  "gui.dyecraft.dyeing_station.button.undo": "Undo",
+  "gui.dyecraft.dyeing_station.undo.success": "Undo success – previous color and dyes restored",
+  "gui.dyecraft.dyeing_station.undo.too_many": "Nothing to undo – consider re‑dyeing manually",
+  "gui.dyecraft.dyeing_station.undo.changed": "Inventory changed, cannot undo",
+
+
+  "jade.dyecraft.color": "HEX: %s",
+  "jade.dyecraft.rgb": "RGB: %s",
+  "jade.dyecraft.hsb": "HSB: %s",
+  "config.jade.plugin_dyecraft.dyeable_block": "Dyeable Block"
+
+
+
+}

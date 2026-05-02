@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FDF",
+    "DSD",
+    "FDF"
+  ],
+  "key": {
+    "F": { "item": "minecraft:cornflower" },
+    "S": { "item": "minecraft:blue_dye" },
+    "D": { "item": "minecraft:wheat_seeds" }
+  },
+  "result": {
+    "id": "dyecraft:blue_dye_seeds",
+    "count": 4
+  }
+}

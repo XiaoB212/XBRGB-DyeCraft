@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GDG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:white_stained_glass"
+    },
+    "D": {
+      "item": "dyecraft:rgb_dye"
+    }
+  },
+  "result": {
+    "id": "dyecraft:dyeable_glass",
+    "count": 8,
+    "components": {
+      "!minecraft:block_state": {},
+      "minecraft:custom_data": {
+        "Color": -1
+      }
+    }
+  }
+}

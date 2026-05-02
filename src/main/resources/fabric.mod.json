@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "dye-craft",
+	"version": "${version}",
+	"name": "Dye Craft",
+	"description": "这是一个基于fabricAPI开发的可根据HEX，RGB，HSB三种方式进行更改方块颜色的模组",
+	"authors": [
+		"哔哩哔哩：春风溢于华夏"
+	],
+	"contact": {
+		"homepage": "https://space.bilibili.com/354332275/",
+		"sources": "https://github.com/XiaoB212/XBRGB-DyeCraft"
+	},
+	"license": "Apache License 2.0",
+	"icon": "logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.xbrgb.dyecraft.DyecraftMod"
+		],
+		"client": [
+			"com.xbrgb.dyecraft.DyecraftModClient"
+		],
+		"jade": [
+			"com.xbrgb.dyecraft.compat.DyecraftJadePlugin"]
+	},
+	"mixins": [
+		"dyecraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": { "layer0": "dyecraft:item/red_dye_seeds" }
+}

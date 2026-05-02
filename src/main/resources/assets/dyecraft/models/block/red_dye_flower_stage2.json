@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "dyecraft:block/red_dye_flower_stage2"
+  }
+}

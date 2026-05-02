@@ -1,0 +1,35 @@
+{
+  "itemGroup.dyecraft.main": "全彩工艺",
+  "item.dyecraft.rgb_dye": "RGB混色染料",
+  "item.dyecraft.red_dye_seeds": "红色染料种子",
+  "item.dyecraft.blue_dye_seeds": "蓝色染料种子",
+  "item.dyecraft.green_dye_seeds": "绿色染料种子",
+  "item.dyecraft.red_dye_plant": "红色染料植物",
+  "item.dyecraft.blue_dye_plant": "蓝色染料植物",
+  "item.dyecraft.green_dye_plant": "绿色染料植物",
+  "block.dyecraft.red_dye_flower": "红色染料植物",
+  "block.dyecraft.blue_dye_flower": "蓝色染料植物",
+  "block.dyecraft.green_dye_flower": "绿色染料植物",
+  "block.dyecraft.dyeable_block": "可染色方块",
+  "block.dyecraft.dyeable_glass": "可染色玻璃",
+  "block.dyecraft.dyeable_concrete": "可染色混凝土",
+  "block.dyecraft.dyeable_terracotta": "可染色陶瓦",
+  "block.dyecraft.dyeable_wool": "可染色羊毛",
+  "block.dyecraft.dyeing_station": "染色台",
+
+  "gui.dyecraft.dyeing_station.button.dye": "染色",
+  "gui.dyecraft.dyeing_station.error.no_dye": "需要红、绿、蓝三种染料！",
+  "gui.dyecraft.dyeing_station.error.no_block": "请放入可染色方块！",
+  "gui.dyecraft.dyeing_station.error.not_enough_dye": "染料不足，每16个方块需要三种染料各一个！",
+  "gui.dyecraft.dyeing_station.button.undo": "撤销",
+  "gui.dyecraft.dyeing_station.undo.success": "已撤销本次染色，恢复之前的颜色与染料数量",
+  "gui.dyecraft.dyeing_station.undo.too_many": "已无更早记录，请自行重新染色",
+  "gui.dyecraft.dyeing_station.undo.changed": "当前物品已变动，无法撤销",
+
+
+  "jade.dyecraft.color": "HEX: %s",
+  "jade.dyecraft.rgb": "RGB: %s",
+  "jade.dyecraft.hsb": "HSB: %s",
+  "config.jade.plugin_dyecraft.dyeable_block": "可染色方块"
+
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FDF",
+    "DSD",
+    "FDF"
+  ],
+  "key": {
+    "F": { "item": "minecraft:cactus" },
+    "S": { "item": "minecraft:green_dye" },
+    "D": { "item": "minecraft:wheat_seeds" }
+  },
+  "result": {
+    "id": "dyecraft:green_dye_seeds",
+    "count": 4
+  }
+}
