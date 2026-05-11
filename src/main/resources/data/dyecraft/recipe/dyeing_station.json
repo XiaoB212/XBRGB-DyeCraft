@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DCD",
+    "OWO",
+    "OOO"
+  ],
+  "key": {
+    "C": { "item": "minecraft:diamond" },
+    "D": { "item": "dyecraft:rgb_dye" },
+    "O": { "item": "minecraft:crying_obsidian" },
+    "W": { "item": "minecraft:crafting_table" }
+  },
+  "result": {
+    "id": "dyecraft:dyeing_station",
+    "count": 1
+  }
+}
