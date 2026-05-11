@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "dyecraft:block/dyeing_station_side",
+    "down": "dyecraft:block/dyeing_station_top",
+    "up": "dyecraft:block/dyeing_station_top",
+    "north": "dyecraft:block/dyeing_station_side",
+    "south": "dyecraft:block/dyeing_station_side",
+    "west": "dyecraft:block/dyeing_station_side",
+    "east": "dyecraft:block/dyeing_station_side"
+  }
+}

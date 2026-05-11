@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "dyecraft:block/dyeable_concrete" }
+  }
+}

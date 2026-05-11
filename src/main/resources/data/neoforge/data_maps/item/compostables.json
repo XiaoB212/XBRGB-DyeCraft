@@ -1,0 +1,22 @@
+{
+  "values": {
+    "dyecraft:red_dye_seeds": {
+      "chance": 0.4
+    },
+    "dyecraft:blue_dye_seeds": {
+      "chance": 0.4
+    },
+    "dyecraft:green_dye_seeds": {
+      "chance": 0.4
+    },
+    "dyecraft:red_dye_plant": {
+      "chance": 0.70
+    },
+    "dyecraft:blue_dye_plant": {
+      "chance": 0.70
+    },
+    "dyecraft:green_dye_plant": {
+      "chance": 0.70
+    }
+  }
+}

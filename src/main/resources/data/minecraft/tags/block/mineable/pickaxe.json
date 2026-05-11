@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "dyecraft:dyeable_block",
+    "dyecraft:dyeable_glass",
+    "dyecraft:dyeable_concrete",
+    "dyecraft:dyeable_terracotta",
+    "dyecraft:dyeing_station"
+  ]
+}

@@ -1,0 +1,76 @@
+name: Build and Release (NeoForge)
+
+on:
+  push:
+    tags:
+      - 'neoforge/v*'
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract version
+        id: version
+        run: |
+          TAG="${{ github.ref_name }}"
+          VERSION="${TAG#neoforge/}"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Build
+        run: ./gradlew clean build --no-daemon
+
+      - name: Collect release assets (exclude sources jar)
+        run: |
+          mkdir release
+          cp build/libs/DyeCraft-Neoforge-*.jar release/ 2>/dev/null || true
+          rm -f release/*-sources.jar
+
+      - name: Extract changelog for this version
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          echo "Attempting to extract changelog for version: $VERSION"
+          # 从 CHANGELOG.md 中提取 ## [v1.1.0] 到下一个 ## [ 之间的内容
+          sed -n "/^## \[$VERSION\]/,/^## \[/p" CHANGELOG.md | sed '$d' > release_body.md
+          if [ ! -s release_body.md ]; then
+            echo "No changelog found for $VERSION, using fallback"
+            echo "See full changelog in CHANGELOG.md" > release_body.md
+          else
+            echo "Changelog extracted:"
+            cat release_body.md
+          fi
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "DyeCraft NeoForge ${{ steps.version.outputs.version }}"
+          body_path: release_body.md
+          draft: false
+          prerelease: false
+          files: release/*.jar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

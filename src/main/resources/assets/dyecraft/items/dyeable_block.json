@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "model",
+    "model": "dyecraft:block/dyeable_block",
+    "tints": [
+      {
+        "type": "dyecraft:dyeable_color",
+        "default": -1
+      }
+    ]
+  }
+}
